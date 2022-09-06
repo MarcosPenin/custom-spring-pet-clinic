@@ -1,4 +1,4 @@
-package guru.springframework.customsprintpetclinic.model;
+package guru.springframework.customspringpetclinic.model;
 
 public class PetType {
 
