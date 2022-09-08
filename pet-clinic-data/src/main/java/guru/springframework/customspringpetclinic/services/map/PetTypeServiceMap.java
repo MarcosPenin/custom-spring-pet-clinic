@@ -3,11 +3,13 @@ package guru.springframework.customspringpetclinic.services.map;
 import guru.springframework.customspringpetclinic.model.Pet;
 import guru.springframework.customspringpetclinic.model.PetType;
 import guru.springframework.customspringpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
 public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
 
     @Override
